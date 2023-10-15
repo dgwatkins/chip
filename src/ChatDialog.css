@@ -1,0 +1,67 @@
+.chat-dialog {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-dialog.closed {
+  display: none; /* Hide the dialog when closed */
+}
+
+.close-button {
+  /* Style for the close button */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  /* Style for the scrolling messages container */
+  flex: 1; /* Expand to fill available space */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border-bottom: 1px solid #ccc; /* Add a border to separate messages and input */
+  padding-bottom: 50px; /* Add some spacing at the bottom */
+  max-height: calc(70vh - 40px); /* Adjust this value as needed */
+}
+
+.message {
+  /* Style for individual messages */
+  margin: 10px 0;
+}
+
+.chat-input {
+  /* Style for the input section */
+  display: flex; /* Use flex layout to arrange input elements horizontally */
+  align-items: center; /* Center input elements vertically */
+}
+
+input[type="text"] {
+  /* Style for the text input */
+  flex: 1; /* Expand to fill available space */
+  padding: 5px;
+}
+
+button {
+  /* Style for the send button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

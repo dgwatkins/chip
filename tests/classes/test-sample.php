@@ -2,13 +2,15 @@
 /**
  * Class SampleTest
  *
- * @package Liveshopchat
+ * @package Chip
  */
+
+ use Chip\PHPUnit\TestCase;
 
 /**
  * Sample test case.
  */
-class SampleTest extends WP_UnitTestCase {
+class SampleTest extends TestCase {
 
 	/**
 	 * A single example test.

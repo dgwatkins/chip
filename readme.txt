@@ -1,23 +1,21 @@
-=== Liveshopchat ===
+=== Chip ===
 Contributors: dgwatkins
-Donate link: https://liveshopchat.com/
-Tags: chat
-Requires at least: 4.5
-Tested up to: 6.3.2
-Requires PHP: 7.3
-Stable tag: 0.1.0
-License: GPLv2 or later
+Requires PHP: 7.4
+Stable tag: 1.0.0
+License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-Real-time chat for shop owners and customers. Enhance support, address inquiries instantly, and enrich the online shopping experience.
-
-== Description ==
-
-LiveShopChat enables real-time communication between shop owners and customers right on the website. This intuitive WordPress plugin is designed to seamlessly integrate with your online storefront, allowing for instant customer support and live interaction. Enhance the shopping experience, address inquiries in real-time, and build stronger relationships with your customers using LiveShopChat.
 
 == Installation ==
 
-Upload and activate the plugin through the "Plugins" menu in WordPress
+Clone this repository to your `wp-content/plugins` folder.
+Go to the plugin folder and run `composer install` and `composer build`.
+
+== Development ==
+
+`composer run-script lint`
+`composer run-script fix`
+`composer run-script validate`
+`composer run-script test`
 
 == Frequently Asked Questions ==
 
@@ -27,5 +25,5 @@ An answer to that question.
 
 == Changelog ==
 
-= 0.1.0 =
+= 1..00 =
 * First release.

@@ -1,0 +1,46 @@
+{
+    "name": "dgwatkins/chip",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "config": {
+        "platform": {
+          "php": "7.4"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "react/socket": "^1.14",
+        "cboden/ratchet": "^0.4.4"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "*",
+        "vimeo/psalm": "^4",
+        "phpunit/phpunit": "^9.6",
+        "yoast/phpunit-polyfills": "^2.0",
+        "php-stubs/wordpress-stubs": "^6.3"
+    },
+    "scripts": {
+        "build": [
+            "npm i",
+            "npm run build"
+        ],
+        "lint": "vendor/bin/phpcs .",
+        "fix": "vendor/bin/phpcbf .",
+        "analyze": "vendor/bin/psalm --show-info=true",
+        "test": "vendor/bin/phpunit --fail-on-warning",
+        "all": [
+          "@build",
+          "@lint",
+          "@analyze",
+          "@test"
+        ]
+    },
+    "autoload": {
+       "psr-4": {
+            "Chip\\": "classes/"
+        }
+    }
+}

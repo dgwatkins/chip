@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="8"
+    autoloader="tests/bootstrap.php"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+		<file name="chip.php" />
+		<directory name="classes" />
+    </projectFiles>
+
+	<stubs>
+		<file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php" />
+	</stubs>
+</psalm>
